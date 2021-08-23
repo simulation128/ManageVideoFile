@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CManageVideoFileDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDOK, &CManageVideoFileDlg::OnBnClickedOk)
+	ON_BN_CLICKED(IDCANCEL, &CManageVideoFileDlg::OnBnClickedCancel)
 END_MESSAGE_MAP()
 
 
@@ -159,4 +160,11 @@ void CManageVideoFileDlg::OnBnClickedOk()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CDialogEx::OnOK();
+}
+
+
+void CManageVideoFileDlg::OnBnClickedCancel()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	CDialogEx::OnCancel();
 }
